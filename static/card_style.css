@@ -1,0 +1,38 @@
+
+    .product-card {
+      border: none;
+      background: transparent;
+      text-align: center;
+    }
+    .product-card img {
+      max-width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    .product-card img:hover {
+      transform: scale(1.05);
+    }
+    .product-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+    .product-price {
+      color: #555;
+      font-size: 0.9rem;
+    }
+    .product-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Show 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Show 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

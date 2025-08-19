@@ -1,0 +1,25 @@
+ {% extends'front/master.html' %}
+
+{% block content %}
+	<div class="container mt-2 mb-2">
+    <div class="row">
+        {% for item in products %}
+        	<div class="col-md-6 col-sm-6 mb-4">
+      <div class="card product-card">
+        <img style="height: 200px; object-fit: contain" src="{{ item['image']}}" class="card-img-top" alt="Watch 1">
+        <div class="card-body">
+          <h6 class="product-title">{{ item['title']}}</h6>
+          <p class="product-price">${{ item['price']}}</p>
+        </div>
+          <div class="wishlist">
+              <input type="button" class="btn btn-sm btn-outline-primary" value="Add To Card">
+          </div>
+      </div>
+    </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+
+

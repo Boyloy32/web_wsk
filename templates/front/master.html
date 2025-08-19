@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% include 'share/style.html' %}
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        {#Navbar#}
+        <div class="container-fluid p-0 m-0">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">WKS</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="/">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/product">Products</a>
+              </li>
+            </ul>
+            <div class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <a href="/cart" class="btn btn-outline-success my-2 my-sm-0">Card(0)</a>
+            </div>
+          </div>
+        </nav>
+        </div>
+
+        {# Content #}
+        {% block content %}
+
+        {% endblock %}
+
+        {#Footer#}
+        <div class="container-fluid p-0 m-0">
+          <footer class="bg-dark text-light pt-5 pb-4">
+            <div class="container text-md-left">
+              <div class="row text-md-left">
+
+                <!-- About -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">MyShop</h5>
+                  <p>
+                    Your one-stop online shop for fashion, electronics, and more. We bring you the best deals at the best prices.
+                  </p>
+                </div>
+
+                <!-- Links -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Shop</h5>
+                  <p><a href="#" class="text-light" style="text-decoration: none;">Men</a></p>
+                  <p><a href="#" class="text-light" style="text-decoration: none;">Women</a></p>
+                  <p><a href="#" class="text-light" style="text-decoration: none;">Kids</a></p>
+                  <p><a href="#" class="text-light" style="text-decoration: none;">Electronics</a></p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful Links</h5>
+                  <p><a href="#" class="text-light" style="text-decoration: none;">Your Account</a></p>
+                  <p><a href="#" class="text-light" style="text-decoration: none;">Orders</a></p>
+                  <p><a href="#" class="text-light" style="text-decoration: none;">Shipping</a></p>
+                  <p><a href="#" class="text-light" style="text-decoration: none;">Help</a></p>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+                  <p><i class="fas fa-home mr-3"></i> Phnom Penh, Cambodia</p>
+                  <p><i class="fas fa-envelope mr-3"></i> support@myshop.com</p>
+                  <p><i class="fas fa-phone mr-3"></i> +855 12 345 678</p>
+                  <p><i class="fas fa-print mr-3"></i> +855 23 456 789</p>
+                </div>
+              </div>
+
+              <hr class="mb-4">
+
+              <!-- Social -->
+              <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                  <p>© 2025 MyShop. All Rights Reserved.</p>
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                  <div class="text-center text-md-right">
+                    <ul class="list-unstyled list-inline">
+                      <li class="list-inline-item">
+                        <a href="#" class="btn-floating btn-sm text-light" style="font-size:23px;"><i class="fab fa-facebook"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="btn-floating btn-sm text-light" style="font-size:23px;"><i class="fab fa-twitter"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="btn-floating btn-sm text-light" style="font-size:23px;"><i class="fab fa-google-plus"></i></a>
+                      </li>
+                      <li class="list-inline-item">
+                        <a href="#" class="btn-floating btn-sm text-light" style="font-size:23px;"><i class="fab fa-linkedin-in"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+
+    </div>
+</body>
+{% include'share/script.html' %}
+{% block custom_script %}
+	
+{% endblock %}
+</html>
